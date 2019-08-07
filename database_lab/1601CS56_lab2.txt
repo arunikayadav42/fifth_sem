@@ -1,0 +1,41 @@
+#1
+SELECT * FROM Faculty_details LEFT JOIN Supervisor ON Faculty_details.faculty_id = Supervisor.faculty_id WHERE Supervisor.faculty_id is NULL;
+
+#2
+SELECT * FROM Student_details INNER JOIN Author_details ON Student_details.student_id = Author_details.author_id WHERE Student_details.student_institute='IITP';
+
+#3
+SELECT Paper_author.paper_id, Paper_author.author_id, Author_details.author_type FROM Paper_author INNER JOIN Author_details ON Paper_author.author_id = Author_details.author_id WHERE Author_details.author_id = '1501CS60' AND Author_details.author_type='Student';
+
+#4
+SELECT * FROM Student_details INNER JOIN Supervisor ON Student_details.student_id = Supervisor.student_id INNER JOIN Paper_author ON Student_details.student_id = Paper_author.author_id INNER JOIN Paper_details ON Paper_details.paper_id = Paper_author.paper_id WHERE Supervisor.faculty_id = '102' AND Paper_details.paper_type='Conference';
+
+#5
+  SELECT Paper_details.paper_title ,COUNT(Paper_author.paper_id) as cn,Paper_author.author_id FROM Paper_author INNER JOIN Paper_details ON Paper_author.paper_id = Paper_details.paper_id GROUP BY author_id having cn=1;
+
+#6
+SELECT faculty_id,count(paper_id) FROM Faculty_details
+LEFT JOIN Paper_author ON Faculty_details.faculty_id=Paper_author.author_id
+GROUP BY Paper_author.paper_id
+
+#7
+select Paper_author.author_id ,max(pa.co) ((select author_id, count(paper_id) as co from Paper_author group by author_id) pa) from Paper_author;
+
+select Paper_author.author_id ,count(Paper_author.paper_id) as cn from Paper_author group by Paper_author.author_id having cn = max(count(Paper_author.paper_id) from Paper_author group by Paper_author.author_id);
+
+#8
+SELECT * FROM Student_details LEFT JOIN Author_details ON Student_details.student_id=Author_details.author_id WHERE Author_details.author_id is NULL;
+
+#9
+SELECT Student_details.student_name,COUNT(Supervisor.author_id) as cn, Supervisor.student_id FROM Supervisor INNER JOIN Student_details ON Supervisor.student_id=Student_details.student_id GROUP BY Supervisor.student_id HAVING cn = 2;  
+
+#10
+SELECT Faculty_details.faculty_id,Faculty_details.faculty_name,Faculty_details.research_area,count(Paper_author.paper_id) as cnt FROM Paper_author INNER JOIN  Faculty_details ON Faculty_details.faculty_id=Paper_author.author_id WHERE Faculty_details.research_area like '%Big data' GROUP BY Paper_author.paper_id
+
+#11
+SELECT Faculty_details.research_area FROM Faculty_details LEFT JOIN Paper_author ON Paper_author.author_id = Faculty_details.faculty_id ORDER BY count(Paper_author.paper_id) DESC;
+
+#12
+SELECT Supervisor.faculty_id,Max(Top.cn) as students_supervised FROM (SELECT Faculty_details.faculty_name,Faculty_details.faculty_id ,count(Supervisor.student_id) as cn FROM Supervisor LEFT JOIN Faculty_details ON Faculty_details.faculty_id = Supervisor.faculty_id GROUP BY Supervisor.student_id) Top,Supervisor GROUP BY Supervisor.student_id;
+
+

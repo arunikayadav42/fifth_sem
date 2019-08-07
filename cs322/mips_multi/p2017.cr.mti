@@ -1,0 +1,85 @@
+C:/Jimson/L4/mips_multi/control_multi.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/control_multi.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module control_multi
+
+Top level modules:
+	control_multi
+
+} {} {}} C:/Jimson/L4/mips_multi/mips_multi.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/mips_multi.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mips_multi
+
+Top level modules:
+	mips_multi
+
+} {} {}} C:/Jimson/L4/mips_multi/alu_ctl.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/alu_ctl.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module alu_ctl
+
+Top level modules:
+	alu_ctl
+
+} {} {}} C:/Jimson/L4/mips_multi/reg32en.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/reg32en.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module reg32en
+
+Top level modules:
+	reg32en
+
+} {} {}} C:/Jimson/L4/mips_multi/alu.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/alu.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Jimson/L4/mips_multi/reg32.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/reg32.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module reg32
+
+Top level modules:
+	reg32
+
+} {} {}} C:/Jimson/L4/mips_multi/mem32.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/mem32.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mem32
+
+Top level modules:
+	mem32
+
+} {} {}} C:/Jimson/L4/mips_multi/mux2.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/mux2.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}} C:/Jimson/L4/mips_multi/mux3.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/mux3.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux3
+
+Top level modules:
+	mux3
+
+} {} {}} C:/Jimson/L4/mips_multi/reg_file.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/reg_file.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} C:/Jimson/L4/mips_multi/mux4.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/mux4.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux4
+
+Top level modules:
+	mux4
+
+} {} {}} C:/Jimson/L4/mips_multi/tb_mips.v {1 {vlog -work work -vopt C:/Jimson/L4/mips_multi/tb_mips.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module tb_mips
+
+Top level modules:
+	tb_mips
+
+} {} {}}

@@ -1,0 +1,56 @@
+C:/Jimson/L4/Lab4/mipstop.v {1 {vlog -work work -vopt C:/Jimson/L4/Lab4/mipstop.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Jimson/L4/Lab4/mipsmem.v {1 {vlog -work work -vopt C:/Jimson/L4/Lab4/mipsmem.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module dmem
+-- Compiling module imem
+
+Top level modules:
+	dmem
+	imem
+
+} {} {}} C:/Jimson/L4/Lab4/mipstest.v {1 {vlog -work work -vopt C:/Jimson/L4/Lab4/mipstest.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} C:/Jimson/L4/Lab4/mips.v {1 {vlog -work work -vopt C:/Jimson/L4/Lab4/mips.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mips
+-- Compiling module controller
+-- Compiling module maindec
+-- Compiling module aludec
+-- Compiling module datapath
+
+Top level modules:
+	mips
+
+} {} {}} C:/Jimson/L4/Lab4/mipsparts.v {1 {vlog -work work -vopt C:/Jimson/L4/Lab4/mipsparts.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module alu
+-- Compiling module regfile
+-- Compiling module adder
+-- Compiling module sl2
+-- Compiling module signext
+-- Compiling module flopr
+-- Compiling module flopenr
+-- Compiling module mux2
+
+Top level modules:
+	alu
+	regfile
+	adder
+	sl2
+	signext
+	flopr
+	flopenr
+	mux2
+
+} {} {}}

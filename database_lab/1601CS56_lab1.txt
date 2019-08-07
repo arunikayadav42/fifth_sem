@@ -1,0 +1,153 @@
+
+create  database DBLAB;
+use DBLAB;
+
+create table Paper_details(paper_id varchar(100), 
+                           paper_title varchar(20), 
+                           paper_type varchar(20), 
+                           publication date);
+
+create table Paper_author(paper_id varchar(20), author_id varchar(20));
+
+create table Author_details(author_id varchar(20), author_type varchar(20));
+
+create table Student_details(student_id varchar(20), student_name varchar(20), student_institute varchar(20),
+                department varchar(20), DOB date , research_area varchar(20));
+                
+create table Faculty_details(faculty_id varchar(20), faculty_name varchar(20),
+faculty_institute varchar(20), department varchar(20), DOB date, research_area varchar(20));
+
+create table Supervisor(faculty_id varchar(20), student_id varchar(20));
+
+show databases;
+
+INSERT INTO Paper_details(paper_id , paper_title , paper_type, publication)
+VALUES ('1', 'Paper1', 'Conference', '2000-11-8' ),
+('2', 'Paper2', 'Journal', '1997-7-6'),
+('3', 'PAper3', 'Conference', '2008-7-8'),
+('4', 'paper4', 'Conference', '2006-11-8'),
+('5', 'paper5', 'Journal', '2000-11-6'),
+('6', 'paper6','Conference', '2010-11-8'),
+('7', 'paper7', 'Journal', '2000-11-10'),
+('8', 'paper8', 'Conference', '2019-11-8'),
+('9', 'paper9', 'Conference', '2045-11-8'),
+('10', 'paper10', 'Journal', '2000-11-11');
+
+INSERT INTO Paper_author(paper_id , author_id )
+VALUES ('1', 'st1' ),
+('2', 'st2'),
+('1', 'f3'),
+('4', 'st4'),
+('1', 'f5'),
+('6', 'st6'),
+('7', 'f7'),
+('2', 'st8'),
+('9', 'f9'),
+('10', '1501CS60');
+
+
+INSERT INTO Author_details(author_id , author_type )
+VALUES ('st1', 'Student'),
+('st2', 'Student'),
+('f3', 'Faculty'),
+('st4', 'Student'),
+('f5', 'Faculty'),
+('st6', 'Student'),
+('f7', 'Faculty'),
+('st8', 'Student'),
+('f9', 'Faculty'),
+('1501CS60', 'Student');
+
+SELECT * FROM Author_details;
+
+INSERT INTO Student_details(student_id, student_name , student_institute ,
+                department , DOB , research_area )
+VALUES ('st1', 'A', 'IITP', 'CSE', '1997-7-6', 'AI'),
+('st2', 'B Kumar', 'IITP', 'CSE', '1997-7-6', 'AI'),
+('st3', 'C', 'IITB', 'CSE', '1997-7-6', 'AI'),
+('st5', 'D', 'IITP', 'CSE', '1998-7-6', 'Big Data'),
+('st6', 'E', 'IITR', 'CSE', '1997-7-6', 'AI'),
+('st7', 'F Kumar', 'IITP', 'CSE', '2007-7-6', 'AI'),
+('st8', 'G', 'IITG', 'CSE', '1997-7-6', 'AI'),
+('st9', 'H', 'IITP', 'CSE', '2001-7-6', 'Big Data'),
+('1501CS60', 'I', 'IITP', 'CSE', '1997-7-6', 'AI');
+
+SELECT * FROM Student_details;
+
+INSERT INTO Faculty_details(faculty_id , faculty_name ,
+faculty_institute , department , DOB , research_area )
+VALUES ('f1', 'a', 'IITP', 'CSE', '1887-5-5', 'AI'),
+('f2', 'b', 'IITP', 'CSE', '1887-5-5', 'AI'),
+('f3', 'c', 'IITP', 'CSE', '1888-5-9', 'AI'),
+('f4', 'd', 'IITP', 'CSE', '1770-5-5', 'Big Data'),
+('f5', 'e', 'IITP', 'CSE', '1887-5-5', 'AI'),
+('f6', 'f', 'IITP', 'CSE', '1987-5-5', 'AI'),
+('f7', 'g', 'IITP', 'CSE', '1887-5-5', 'NLP'),
+('f8', 'h', 'IITP', 'CSE', '1886-5-5', 'AI'),
+('f9', 'i', 'IITP', 'CSE', '1856-5-5', 'ML'),
+('f10', 'j', 'IITP', 'CSE', '1987-5-5', 'Networks');
+
+INSERT INTO Supervisor(faculty_id , student_id )
+VALUES ('f1', 'st1'),
+('f1', 'st2'),
+('f3', 'st3'),
+('f2', 'st4'),
+('f1', 'st5'),
+('f6', 'st6'),
+('f7', 'st7'),
+('f9', 'st8'),
+('f9', 'st9'),
+('f10', '1501CS60');
+
+ALTER TABLE Paper_details ADD PRIMARY KEY(paper_id);
+ALTER TABLE Author_details ADD PRIMARY KEY(author_id);
+ALTER TABLE Student_details ADD PRIMARY KEY(student_id);
+ALTER TABLE Faculty_details ADD PRIMARY KEY(faculty_id, research_area);
+ALTER TABLE Paper_author ADD PRIMARY KEY(paper_id, author_id);
+ALTER TABLE Supervisor ADD PRIMARY KEY(faculty_id, student_id);
+
+SELECT * FROM Paper_author;
+
+ALTER TABLE Paper_author
+ADD FOREIGN KEY (paper_id) REFERENCES Paper_details(paper_id);
+
+ALTER TABLE Paper_author
+ADD FOREIGN KEY (author_id) REFERENCES Author_details(author_id);
+
+ALTER TABLE Supervisor
+ADD FOREIGN KEY (faculty_id) REFERENCES Faculty_details(faculty_id);
+
+ALTER TABLE Supervisor
+ADD FOREIGN KEY (student_id) REFERENCES Student_details(student_id);
+
+SELECT * FROM Paper_details 
+WHERE paper_type='Conference'; 
+
+SELECT * FROM Student_details 
+WHERE research_area='Big Data'; 
+
+SELECT COUNT(paper_type)
+FROM Paper_details
+WHERE paper_type='Journal';
+
+SELECT * FROM Student_details 
+WHERE DOB BETWEEN '1990-4-1' AND '2000-3-31';
+
+SELECT * FROM Faculty_details 
+WHERE faculty_institute='IITP' AND research_area='AI'; 
+
+SELECT * FROM Faculty_details 
+WHERE research_area='Big Data' AND research_area='AI';
+
+SELECT * FROM Student_details 
+WHERE student_name LIKE'%Kumar';
+
+SELECT COUNT(student_id), faculty_id
+FROM Supervisor
+GROUP BY faculty_id;
+
+SELECT COUNT(author_id) as cn,paper_id
+FROM Paper_author
+GROUP BY paper_id
+HAVING cn>1;
+

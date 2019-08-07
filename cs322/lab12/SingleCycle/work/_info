@@ -1,0 +1,327 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Jimson\L4\Lab4
+T_opt
+VPhdkXVQ@2CM^ENgjKLCSU2
+Z1 04 9 4 work testbench fast 0
+=1-843a4b4a3d38-57c06fa3-274-2bf4
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z3 OE;O;10.1a;51
+Z4 dC:\Jimson\L4\Lab4
+T_opt1
+ViM8gSQ01GRKQzC^<zRL3Q2
+R1
+=1-843a4b4a3d38-57c84eda-230-2880
+R2
+n@_opt1
+R3
+R4
+vadder
+VR4:XbIkd<X908neF9?e9K1
+r1
+31
+I1I>X]2]:8e4kDJ2>]klZQ3
+R4
+Z5 w1290014614
+Z6 8C:/Jimson/L4/Lab4/mipsparts.v
+Z7 FC:/Jimson/L4/Lab4/mipsparts.v
+L0 48
+Z8 OE;L;10.1a;51
+Z9 !s108 1471632598.406000
+Z10 !s107 C:/Jimson/L4/Lab4/mipsparts.v|
+Z11 !s90 -reportprogress|300|-work|work|-vopt|C:/Jimson/L4/Lab4/mipsparts.v|
+Z12 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s85 0
+!s100 ggUJFYCkZ575l3zCG;z:;1
+valu
+VejYX:795jcXa79:=j]]Hk1
+r1
+31
+Im^HdJc1bKj`YA>ofjPVoI1
+R4
+R5
+R6
+R7
+L0 6
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+!s85 0
+!s100 z2ehfSa>gSc[1P0?J;FIG3
+valudec
+VV@U_8;`LNAe8eO3WRWMD]1
+r1
+31
+I7RPFBNOZ3KZidZ?6Si3m60
+R4
+Z13 w1290014572
+Z14 8C:/Jimson/L4/Lab4/mips.v
+Z15 FC:/Jimson/L4/Lab4/mips.v
+L0 71
+R8
+Z16 !s108 1471632597.348000
+Z17 !s107 C:/Jimson/L4/Lab4/mips.v|
+Z18 !s90 -reportprogress|300|-work|work|-vopt|C:/Jimson/L4/Lab4/mips.v|
+R12
+!i10b 1
+!s85 0
+!s100 b`HhN@8WdCi@2e[<kK1gh1
+vcontroller
+VnJHXRiBo<KmoA:XzObWDE0
+r1
+31
+I8`f0SUK^o>IP;7`>07oN33
+R4
+R13
+R14
+R15
+L0 27
+R8
+R16
+R17
+R18
+R12
+!i10b 1
+!s85 0
+!s100 Tmih58C2FR]2V=?`_=Ge@0
+vdatapath
+V[:^j8oBN[C9WO42jPdSCW1
+r1
+31
+I0nk07zzDbi=oI1C`4bB`K2
+R4
+R13
+R14
+R15
+L0 90
+R8
+R16
+R17
+R18
+R12
+!i10b 1
+!s85 0
+!s100 WV;WBlGmZ_7II^in5o4oe2
+vdmem
+V09OGzlPeaYS`EJSH7=l6?2
+r1
+31
+IX[iXQbn_C0k<7Cd_VKdl?3
+R4
+Z19 w1290014686
+Z20 8C:/Jimson/L4/Lab4/mipsmem.v
+Z21 FC:/Jimson/L4/Lab4/mipsmem.v
+L0 6
+R8
+Z22 !s108 1471632598.018000
+Z23 !s107 C:/Jimson/L4/Lab4/mipsmem.v|
+Z24 !s90 -reportprogress|300|-work|work|-vopt|C:/Jimson/L4/Lab4/mipsmem.v|
+R12
+!i10b 1
+!s85 0
+!s100 EJ>P_lN=dfLziZN2imh^E1
+vflopenr
+Ib4CRUbYdbDFmBfbSFCQPc0
+Vl[@31Ka9Wak9oGo?2I58:3
+R4
+R5
+R6
+R7
+L0 77
+R8
+r1
+31
+R9
+R10
+R11
+R12
+!s100 O]0ecJPc66;cVo>`HP6Qf0
+!i10b 1
+!s85 0
+vflopr
+VKfe>keNPnLBlHh<KCg1o52
+r1
+31
+Ie^`;5zLaT3z[NV;P^UBg30
+R4
+R5
+R6
+R7
+L0 67
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+!s85 0
+!s100 T6>ZG2WnedY:M>l;0RjWk1
+vimem
+V_eezcn[fFK3m2C;IUCfT<1
+r1
+31
+I;jzgP3]Pl2ndlFVISJcdU0
+R4
+R19
+R20
+R21
+L0 19
+R8
+R22
+R23
+R24
+R12
+!i10b 1
+!s85 0
+!s100 =Zb8GW7ZVc^Uzl_DAOf5R3
+vmaindec
+VblMkDZdF]UTJf]k4DjYBB2
+r1
+31
+IU0:8Wm84;aRj;m:1PEz013
+R4
+R13
+R14
+R15
+L0 46
+R8
+R16
+R17
+R18
+R12
+!i10b 1
+!s85 0
+!s100 M^GQNFdf2NM6^1bRZHM3J1
+vmips
+Va2;eVEc7`hU<K]<IICd^52
+r1
+31
+IaF3QPh2NhZA5n9K2JWmi]2
+R4
+R13
+R14
+R15
+L0 4
+R8
+R16
+R17
+R18
+R12
+!i10b 1
+!s85 0
+!s100 j[C^mJFdN^nR9I34jcSD72
+vmux2
+VT8RWJBjAIeM]>7U=5kBkT1
+r1
+31
+I3WzQKlITRWM7F?0W[3BYa1
+R4
+R5
+R6
+R7
+L0 88
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+!s85 0
+!s100 44[`aZcI@Ge<FQL2]I80W1
+vregfile
+Vl>JD@?ekG29h[?;gM3Z2H1
+r1
+31
+IVGWKMfAcN^WXaVom;n_:E3
+R4
+R5
+R6
+R7
+L0 28
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+!s85 0
+!s100 @WFf]Hj_5UAjMGchzG6OJ2
+vsignext
+VzXjEl4X;;[WhS@=1HjFT41
+r1
+31
+I9aJi[_NaK@U:4i8d61b680
+R4
+R5
+R6
+R7
+L0 61
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+!s85 0
+!s100 FobJGzl4l>MVhGO7:jIk?1
+vsl2
+VMHGRbO<8oJM:TjGW_j2PX2
+r1
+31
+IC4Ro:QMYFaP4^z6E=4?923
+R4
+R5
+R6
+R7
+L0 54
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+!s85 0
+!s100 YVk:WfiOWg91EE1DPknf<2
+vtestbench
+VhGfW:390DM[oDMzegDH9`2
+r1
+31
+IJVdbLBM3cmWL`[fAbJ:oU1
+R4
+w1290014626
+8C:/Jimson/L4/Lab4/mipstest.v
+FC:/Jimson/L4/Lab4/mipstest.v
+L0 6
+R8
+R12
+!i10b 1
+!s85 0
+!s100 21BT<jM5mV=;@54aB]SL63
+!s108 1471632599.387000
+!s107 C:/Jimson/L4/Lab4/mipstest.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Jimson/L4/Lab4/mipstest.v|
+vtop
+V=TIn67B?1ag:LQ8NchNYN0
+r1
+31
+IV<DE_zA63`cd844jk84YI1
+R4
+w1290014640
+8C:/Jimson/L4/Lab4/mipstop.v
+FC:/Jimson/L4/Lab4/mipstop.v
+L0 6
+R8
+R12
+!i10b 1
+!s85 0
+!s100 Io]RTRn?bnK>zd>GfN:dI2
+!s108 1471632599.647000
+!s107 C:/Jimson/L4/Lab4/mipstop.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Jimson/L4/Lab4/mipstop.v|
